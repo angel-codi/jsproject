@@ -1,19 +1,74 @@
 <!doctype html>
 <html>
-<head>
-    <title>건강정보</title>
-    <meta charset="utf-8">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <title>About me</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    </head>
 
-<body>
-<h1>건강정보</h1>
-<h2><a href ="이재신.html">뒤로가기</a></h2>
-<ul>
-    <li>키 / 몸무게</li>
-        <br>키 : 177
-        <br>몸무게 : 67<br>
-    <li>과거병력</li>
-    <li>운동</li>
-</ul>
-</body>
+    <body>
+        <div class="container">
+            <header>
+                <nav class="navbar">
+                    <!-- <div class="navbar_logo"></div> -->
+                    <a href="이재신.html" style="vertical-align: bottom; font-weight:bold; font-size:20px; font-family: batang;">About me</a>
+                        <ul class="navbar_menu">
+                            <li><a href="이재신.html">Home</a></li>
+                            <li><a href="인사이트.html">Insight</a></li>
+                            <li><a href="건강정보.html" style="font-weight:bold">Health</a></li>
+                            <li><a href="이력서.html">Resume</a></li>
+                            <li><a href="지도.html">Contact</a></li>
+                        </ul>
+                    <!-- <button class="sidebar-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button> // sidebar를 불러오는 토글버튼을 생성--> 
+                    <a id="pull" href="#"></a>
+                </nav>
+            </header>
+
+            <main>
+                <aside class="sidebar">
+                    <div class="sidebar-header">
+                        <h2>About me</h2>
+                        <button class="close-btn">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <ul class="links">
+                        <li><a href="이재신.html">Home</a></li>
+                        <li><a href="인사이트.html">Insight</a></li>
+                        <li><a href="건강정보.html" style="font-weight:bold">Health</a></li>
+                        <li><a href="이력서.html" >Resume</a></li>
+                        <li><a href="지도.html">Contact</a></li>
+                    </ul>
+                </aside>
+
+                <h1><p style = "text-align:center">Health</p></h1> 
+
+                  <ul>
+                    <li>키 : 177cm / 몸무게 : 67kg</li>
+                    <li>과거병력</li>
+                    <li>운동</li>
+                  </ul>
+                
+
+                
+            </main>
+
+            <footer>
+                <a href = "https://github.com/angel-codi/jsproject/tree/main" style="color:black"><img src = github.png width=6% height=2%></a>
+                
+                <p style = text-align:right>
+                    <span> Made by JaeS</span><br/>
+                    <span> 이메일 : sott6960@gmail.com</span><br/>
+                    <span> Copyright 2023. Jaesin. All Rights Reserved.</span>
+                </p>
+            </footer>
+        </div>
+    </body>
+
+    <script src = resume.js></script>   
 </html>
