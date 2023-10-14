@@ -46,6 +46,12 @@ closeBtn.addEventListener('click', function() {
     sidebar.classList.remove('show-sidebar');
 });
 
+document.addEventListener('keydown', function(event) { // sidebar가 활성화되었을때 키보드의 esc버튼을 누르면 sidebar를 닫음
+    if (event.key === 'Escape') {
+        sidebar.classList.remove('show-sidebar');
+    }
+});
+
 const aboutMe = document.querySelector('a');
 
 let allowMouseOver = true;
@@ -63,6 +69,12 @@ aboutMe.addEventListener('mouseover', function() {
     }
 });
 
+document.addEventListener('click', function(event) {
+    const isClickInside = sidebar.contains(event.target);
+    if (!isClickInside) {
+        sidebar.classList.remove('show-sidebar');
+    }
+});
 
 
 
